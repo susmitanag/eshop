@@ -1,0 +1,41 @@
+/* Everly admin. Builds on style.css. */
+.admin-body { background: #EEF1F7; }
+.admin-header { background: var(--ink); position: sticky; top: 0; z-index: 40; }
+.admin-header .header-inner { height: 64px; }
+.admin-header .main-nav a { color: #C7CFE3; }
+.admin-header .main-nav a:hover { background: rgba(255, 255, 255, 0.1); color: #fff; }
+.admin-header .main-nav a.is-current { background: rgba(255, 255, 255, 0.14); color: #fff; }
+.admin-tag { font-style: normal; font-family: "Inter", sans-serif; font-weight: 700; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; background: var(--coral); color: #fff; padding: 3px 9px; border-radius: 999px; margin-left: 4px; }
+.admin-main { padding-top: 32px; padding-bottom: 72px; }
+.admin-main h1 { font-size: 2rem; }
+.admin-page-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 22px; flex-wrap: wrap; }
+.admin-page-header h1 { margin: 0; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 20px 0 32px; }
+.stat-card { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px 22px; display: flex; flex-direction: column; }
+.stat-value { font-family: "Jost", sans-serif; font-weight: 800; font-size: 2rem; line-height: 1.1; }
+.stat-label { color: var(--muted); font-size: 0.92rem; }
+.admin-two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.admin-main h2 { font-size: 1.3rem; margin: 6px 0 14px; }
+.admin-thumb { width: 48px; height: 48px; border-radius: 10px; overflow: hidden; display: block; }
+.cell-product { display: flex; align-items: center; gap: 14px; }
+.admin-actions { display: flex; align-items: center; gap: 12px; }
+.admin-actions form, .inline-form { display: inline; }
+.admin-form { max-width: 760px; }
+.admin-form .hint { color: var(--muted); font-size: 0.88rem; margin: 2px 0 0; }
+.admin-form input[type="color"] { padding: 4px; height: 46px; width: 90px; }
+.admin-form input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--coral); }
+.checks { display: flex; gap: 24px; margin-top: 14px; }
+.checks label { display: flex; align-items: center; gap: 10px; margin: 0; font-weight: 600; }
+.preview-box { width: 140px; height: 140px; border-radius: 14px; overflow: hidden; margin: 8px 0 4px; box-shadow: var(--shadow); }
+.status-form { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.status-form select { padding: 10px 14px; border: 2px solid var(--line); border-radius: 12px; font: inherit; background: #fff; }
+.filter-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+.filter-pills a { padding: 7px 16px; border-radius: 999px; background: #fff; border: 1px solid var(--line); font-weight: 600; font-size: 0.92rem; }
+.filter-pills a.is-active { background: var(--ink); color: #fff; border-color: var(--ink); }
+.filter-pills a:hover { text-decoration: none; border-color: var(--ink); }
+.admin-login-page { max-width: 440px; margin: 72px auto; padding: 0 24px; }
+.admin-login-page .panel { padding: 36px; }
+@media (max-width: 900px) {
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    .admin-two { grid-template-columns: 1fr; }
+}
